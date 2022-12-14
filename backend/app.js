@@ -22,12 +22,12 @@ app.use(express.json())
 app.use(cors())
 
 app.use("/api/user",userRouter)
-app.use("/addvideos",savedVideosRouter)
-app.use("/videos",videoRouter)
-app.use("/videosplayer",videoPlayerRouter)
-app.use("/gamingvideos",gamingVideosRouter)
-app.use("/reactedvideos",reactedVideosRouter)
-app.use("/trendingvideos",trendingVideosRouter)
+app.use("/api/addvideos",savedVideosRouter)
+app.use("/api/videos",videoRouter)
+app.use("/api/videosplayer",videoPlayerRouter)
+app.use("/api/gamingvideos",gamingVideosRouter)
+app.use("/api/reactedvideos",reactedVideosRouter)
+app.use("/api/trendingvideos",trendingVideosRouter)
 
 
 const connectToDb = async () =>{
